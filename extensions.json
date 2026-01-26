@@ -1,0 +1,19 @@
+{
+  // @see https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": [
+    "alexkrechik.cucumberautocomplete", // Gherkin/Cucumber full support
+    "christian-kohler.path-intellisense", // Path autocompletion
+    "davidanson.vscode-markdownlint", // Markdown linting
+    "dawhite.mustache", // Handlebars/Mustache support
+    "esbenp.prettier-vscode", // Code formatter
+    "formulahendry.auto-rename-tag", // Auto rename HTML/XML tags
+    "github.copilot", // AI pair programmer
+    "github.copilot-chat", // AI chat assistant
+    "humao.rest-client", // HTTP request client
+    "jetmartin.bats", // BATS (Bash Automated Testing System)
+    "mikestead.dotenv", // .env file support
+    "prisma.prisma", // Prisma ORM support
+    "timonwong.shellcheck", // ShellCheck
+    "william-voyek.vscode-nginx" // Nginx configuration support
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "servers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--headless=true",
+        "--isolated=true"
+      ]
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "prisma": {
+      "command": "npx",
+      "args": ["-y", "prisma", "mcp"]
+    }
+  }
+}

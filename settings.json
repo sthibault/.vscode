@@ -1,0 +1,136 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+
+  // Performance optimisations
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/node_modules": false // false allows navigation but still excluded from search
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.github": true,
+    "**/coverage": true
+  },
+
+  // Git submodule optimizations
+  "git.detectSubmodules": true,
+  "git.detectSubmodulesLimit": 50,
+  "git.submoduleRecursionLimit": 2,
+  "git.autorefresh": true,
+  "git.fetchOnPull": true,
+  "git.autoRepositoryDetection": true,
+  "git.enableSmartCommit": false,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "git.untrackedChanges": "separate",
+
+  // GitHub Copilot
+  // https://code.visualstudio.com/docs/copilot/copilot-customization
+  "github.copilot.enable": true,
+  "github.copilot.inlineSuggest.enable": false,
+  "github.copilot.advanced": {
+    "workspaceFolder": "auto",
+    "indentationMode": "auto",
+    "repositoryContext": true,
+    "typicality": 0.5
+  },
+  "github.copilot.chat.enable": true,
+  "github.copilot.chat.codeGeneration.enable": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".markdownlint-cli2.jsonc"
+    },
+    {
+      "file": ".markdownlint.json"
+    },
+    {
+      "file": ".prettierrc"
+    },
+    {
+      "file": ".prettierignore"
+    }
+  ],
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.search.semanticTextResults": true,
+  "github.copilot.chat.validation.enable": true,
+
+  // Markdown Lint
+  "markdownlint.run": "onSave",
+
+  // Rest Client
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "version": "26.1.04"
+    },
+    "local": {
+      "baseUrl": "https://localhost"
+    }
+  },
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 8,
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js,${capture}.d.ts,${capture}.test.ts,${capture}.spec.ts",
+    "package.json": "package-lock.json,yarn.lock,pnpm-lock.yaml,.npmrc,.yarnrc",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+
+  // Editor performance optimizations
+  "editor.fastScrollSensitivity": 5,
+  "editor.scrollBeyondLastLine": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+
+  // TypeScript settings for large projects
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.suggest.includeCompletionsForModuleExports": true,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  },
+
+  // Configuration for large projects
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.smoothScrolling": true,
+
+  // Support multi-root workspace
+  "workbench.editor.labelFormat": "medium",
+  "explorer.autoReveal": "focusNoScroll"
+}
