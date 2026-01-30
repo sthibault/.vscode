@@ -21,6 +21,10 @@
     "prisma": {
       "command": "npx",
       "args": ["-y", "prisma", "mcp"]
+    },
+    "cb_ai": {
+      "url": "http://localhost:3000/mcp",
+      "type": "http"
     }
   }
 }
